@@ -1,0 +1,20 @@
+﻿@using TurboazTask1.Models;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Detail";
+}
+
+@model List<CarModel>
+
+<h1>Brends Detail</h1>
+
+@foreach (CarModel carmodel in Model)
+{
+    <ul>
+
+        <li>
+            <a asp-controller="Carmodel" asp-action="Detail" asp-route-id="@carmodel.ModelId">@carmodel.modelname</a>
+        </li>
+    </ul>
+}
+

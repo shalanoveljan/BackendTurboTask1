@@ -1,0 +1,34 @@
+﻿
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a asp-controller="Home"  asp-action="Index">Home</a>
+            </li>
+
+            <li>
+                <a asp-controller="Brend"  asp-action="Index">Car Brends</a>
+            </li>
+
+            <li>
+                <a asp-controller="CarModel" asp-action="Index">Car Models</a>
+            </li>
+
+            <li>
+                <a asp-controller="car" asp-action="Index">Cars</a>
+            </li>
+        </ul>
+         
+        @RenderBody()
+    </div>
+</body>
+</html>
